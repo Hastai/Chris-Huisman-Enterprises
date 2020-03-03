@@ -7,7 +7,7 @@
     <title>Chris Huisman Enterprises</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id="panzoom-element">
       <div></div>
       <div class="map">
         <!-- 1 -->
@@ -84,5 +84,15 @@
       </div>
       <div></div>
   </div>
+<script src="./js/panzoom.min.js"></script>
+<script>
+const elem = document.getElementById('panzoom-element')
+const panzoom = Panzoom(elem, {
+  maxScale: 5
+})
+panzoom.pan(10, 10)
+panzoom.zoom(2, { animate: true })
+
+elem.parentElement.addEventListener('wheel', panzoom.zoomWithWheel)      </script>
   </body>
 </html>

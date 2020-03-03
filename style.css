@@ -6,10 +6,11 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Gill Sans Nova Light';
+  font-family: 'Gill Sans';
   font-weight: 300;
   font-size: 18px;
   color: var(--black);
+  overflow: hidden;
 }
 
 .wrapper {
