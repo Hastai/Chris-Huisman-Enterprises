@@ -29,10 +29,10 @@
         <div class="filler"></div>
         <!-- 3 -->
         <div class="grey"></div>
-        <div class="text link">
+        <div class="text link panzoom-exclude">
            <a href="twijfel.html">STUDIE</a> 
           </div>
-        <div class="text name">
+        <div class="text name panzoom-exclude">
           <div class="chris">CHRIS</div>
           <div class="huisman">HUISMAN</div>
         </div>
@@ -47,7 +47,7 @@
         <!-- 5 -->
         <div class="photo small" style="background-image: url('images/paarden.png')"></div>
         <a href="twijfel.html">
-          <div class="text link"> 
+          <div class="text link panzoom-exclude"> 
           CONTACT
           </div>
         </a>
@@ -56,13 +56,13 @@
         <div class="grey"></div>
         <!-- 6 -->
         <div class="grey"></div>
-        <div class="text link"> 
+        <div class="text link panzoom-exclude"> 
           <a href="twijfel.html">VISIE</a> 
            
         </div>
         <div class="grey"></div>
         <div class="photo small" style="background-image: url('images/ookrof.png')"></div>
-        <div class="text link"> 
+        <div class="text link panzoom-exclude"> 
           <a href="twijfel.html">CORSO</a> 
            
         </div>
@@ -85,14 +85,6 @@
       <div></div>
   </div>
 <script src="./js/panzoom.min.js"></script>
-<script>
-const elem = document.getElementById('panzoom-element')
-const panzoom = Panzoom(elem, {
-  maxScale: 5
-})
-panzoom.pan(10, 10)
-panzoom.zoom(2, { animate: true })
-
-elem.parentElement.addEventListener('wheel', panzoom.zoomWithWheel)      </script>
+<script src="./js/index.js"></script>
   </body>
 </html>
